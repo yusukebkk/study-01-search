@@ -14,6 +14,9 @@ def search():
         print("{}が見つかりました".format(word))
     else:
         print("{}は見つかりませんでした".format(word))
+        #見つからなかった場合リストに追加する
+        source.append(word)
+        print ("{}がリストに追加されました".format(word))
 
 if __name__ == "__main__":
     search()
